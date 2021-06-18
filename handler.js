@@ -64,6 +64,7 @@ module.exports = {
           if (!('sWelcome' in chat)) chat.sWelcome = ''
           if (!('sBye' in chat)) chat.sBye = ''
           if (!('sPromote' in chat)) chat.sPromote = ''
+          if (!('simi' in chat)) chat.simi = false
           if (!('sDemote' in chat)) chat.sDemote = ''
           if (!('delete' in chat)) chat.delete = true
           if (!('antiLink' in chat)) chat.antiLink = false
@@ -74,6 +75,7 @@ module.exports = {
           sWelcome: '',
           sBye: '',
           sPromote: '',
+          simi: false,
           sDemote: '',
           delete: true,
           antiLink: false,
