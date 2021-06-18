@@ -12,6 +12,13 @@ let handler = async (m, { conn, usedPrefix, command, text, args, isROwner }) => 
     case 'detect':
       chat.detect = isEnable
       break
+    case 'simi':
+      if (!m.isPrems) {
+        global.dfail('premium', m, conn)
+        throw false
+      }
+      chat.simi = isEnable
+      break
     case 'delete':
       chat.delete = isEnable
       break
